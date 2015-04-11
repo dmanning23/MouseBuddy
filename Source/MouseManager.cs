@@ -73,8 +73,10 @@ namespace MouseBuddy
 		/// <summary>
 		/// Reads the latest state of the keyboard and gamepad.
 		/// </summary>
-		public void Update()
+		public override void Update(GameTime gameTime)
 		{
+			base.Update(gameTime);
+
 			LastMouseState = CurrentMouseState;
 			CurrentMouseState = Mouse.GetState();
 		}
