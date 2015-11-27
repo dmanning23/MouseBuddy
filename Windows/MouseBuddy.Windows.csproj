@@ -76,8 +76,29 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\Source\ButtonDownEventArgs.cs">
+      <Link>ButtonDownEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\Source\ClickEventArgs.cs">
+      <Link>ClickEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\Source\DragEventArgs.cs">
+      <Link>DragEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\Source\DropEventArgs.cs">
+      <Link>DropEventArgs.cs</Link>
+    </Compile>
     <Compile Include="..\Source\IMouseManager.cs">
       <Link>IMouseManager.cs</Link>
+    </Compile>
+    <Compile Include="..\Source\MouseButton.cs">
+      <Link>MouseButton.cs</Link>
+    </Compile>
+    <Compile Include="..\Source\MouseButtonMessages.cs">
+      <Link>MouseButtonMessages.cs</Link>
+    </Compile>
+    <Compile Include="..\Source\MouseButtonStates.cs">
+      <Link>MouseButtonStates.cs</Link>
     </Compile>
     <Compile Include="..\Source\MouseManager.cs">
       <Link>MouseManager.cs</Link>
@@ -86,6 +107,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\StateMachine\Windows\StateMachineBuddy.Windows.csproj">
+      <Project>{cd66eeb4-8381-41a8-abed-372dc31646ac}</Project>
+      <Name>StateMachineBuddy.Windows</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />

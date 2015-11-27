@@ -1,5 +1,7 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Input;
+using System;
+using System.Collections.Generic;
 
 namespace MouseBuddy
 {
@@ -8,23 +10,13 @@ namespace MouseBuddy
 	/// </summary>
 	public interface IMouseManager : IUpdateable
 	{
-		MouseState CurrentMouseState { get; }
-
-		MouseState LastMouseState { get; }
-
 		/// <summary>
-		/// Get the mouse position
+		/// Get the list of current mouse events.
+		/// This list is flushed and repopulated every update.
 		/// </summary>
-		Vector2 MousePos { get; }
-
-		/// <summary>
-		/// Check for left mouse click
-		/// </summary>
-		bool LMouseClick { get; }
-
-		/// <summary>
-		/// Check for left mouse button held down
-		/// </summary>
-		bool LMouseDown { get; }
+		List<EventArgs> MouseEvents
+		{
+			get;
+		}
 	}
 }
