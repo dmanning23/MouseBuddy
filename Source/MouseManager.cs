@@ -138,8 +138,10 @@ namespace MouseBuddy
 			ClickStartPosition = new Vector2[Enum.GetValues(typeof(MouseButton)).Length];
 
 			//set up state machines
+			LeftButtonState = new StateMachine();
 			InitStateMachine(LeftButtonState);
 			LeftButtonState.StateChangedEvent += OnLButtonStateChange;
+			RightButtonState = new StateMachine();
 			InitStateMachine(RightButtonState);
 			RightButtonState.StateChangedEvent += OnRButtonStateChange;
 
