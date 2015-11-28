@@ -101,6 +101,9 @@
     <Compile Include="..\Source\MouseButtonStates.cs">
       <Link>MouseButtonStates.cs</Link>
     </Compile>
+    <Compile Include="..\Source\MouseComponent.cs">
+      <Link>MouseComponent.cs</Link>
+    </Compile>
     <Compile Include="..\Source\MouseManager.cs">
       <Link>MouseManager.cs</Link>
     </Compile>

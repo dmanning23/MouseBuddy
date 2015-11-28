@@ -9,7 +9,7 @@ namespace MouseBuddy
 	/// <summary>
 	/// MonoGame componenet that manages some simple mouse state junk.
 	/// </summary>
-	public class MouseManager : GameComponent, IMouseManager
+	public class MouseManager : IMouseManager
 	{
 		#region Properties
 
@@ -22,14 +22,14 @@ namespace MouseBuddy
 
 		private MouseState LastMouseState { get; set; }
 
-		private StateMachine LeftButtonState
+		public StateMachine LeftButtonState
 		{
-			get; set;
+			get; private set;
 		}
 
-		private StateMachine RightButtonState
+		public StateMachine RightButtonState
 		{
-			get; set;
+			get; private set;
 		}
 
 		private Vector2[] ClickStartPosition { get; set; }
@@ -37,7 +37,7 @@ namespace MouseBuddy
 		/// <summary>
 		/// Get the mouse position... only used in certain games
 		/// </summary>
-		public Vector2 MousePos
+		public virtual Vector2 MousePos
 		{
 			get
 			{
@@ -48,7 +48,7 @@ namespace MouseBuddy
 		/// <summary>
 		/// The left mouse button was up last time we checked, is down now.
 		/// </summary>
-		private bool LMouseClick
+		public virtual bool LMouseClick
 		{
 			get
 			{
@@ -60,7 +60,7 @@ namespace MouseBuddy
 		/// <summary>
 		/// The left mouse button is held down.
 		/// </summary>
-		private bool LMouseDown
+		public virtual bool LMouseDown
 		{
 			get
 			{
@@ -71,7 +71,7 @@ namespace MouseBuddy
 		/// <summary>
 		/// The left mouse button was held, now is released.
 		/// </summary>
-		private bool LMouseRelease
+		public virtual bool LMouseRelease
 		{
 			get
 			{
@@ -83,7 +83,7 @@ namespace MouseBuddy
 		// <summary>
 		/// The right mouse button was up last time we checked, is down now.
 		/// </summary>
-		private bool RMouseClick
+		public virtual bool RMouseClick
 		{
 			get
 			{
@@ -95,7 +95,7 @@ namespace MouseBuddy
 		/// <summary>
 		/// The right mouse button is held down.
 		/// </summary>
-		private bool RMouseDown
+		public virtual bool RMouseDown
 		{
 			get
 			{
@@ -106,7 +106,7 @@ namespace MouseBuddy
 		/// <summary>
 		/// The right mouse button was held, now is released.
 		/// </summary>
-		private bool RMouseRelease
+		public virtual bool RMouseRelease
 		{
 			get
 			{
@@ -128,8 +128,7 @@ namespace MouseBuddy
 		/// <summary>
 		/// Constructs a new input state.
 		/// </summary>
-		public MouseManager(Game game)
-			: base(game)
+		public MouseManager()
 		{
 			CurrentMouseState = new MouseState();
 			LastMouseState = new MouseState();
@@ -144,10 +143,6 @@ namespace MouseBuddy
 			RightButtonState = new StateMachine();
 			InitStateMachine(RightButtonState);
 			RightButtonState.StateChangedEvent += OnRButtonStateChange;
-
-			//Register ourselves to implement the DI container service.
-			game.Components.Add(this);
-			game.Services.AddService(typeof(IMouseManager), this);
 		}
 
 		private void InitStateMachine(StateMachine states)
@@ -182,12 +177,10 @@ namespace MouseBuddy
 		#region Methods
 
 		/// <summary>
-		/// Reads the latest state of the keyboard and gamepad.
+		/// Update the mouse manager.
 		/// </summary>
-		public override void Update(GameTime gameTime)
+		public void Update(bool isActive)
 		{
-			base.Update(gameTime);
-
 			//update the mouse states
 			LastMouseState = CurrentMouseState;
 			CurrentMouseState = Mouse.GetState();
@@ -195,7 +188,7 @@ namespace MouseBuddy
 			//clear the mouse events
 			MouseEvents.Clear();
 
-			if (Game.IsActive)
+			if (isActive)
 			{
 				//check if mouse is clicked
 				if (LMouseClick)
@@ -209,7 +202,19 @@ namespace MouseBuddy
 					{
 						LeftButtonState.SendStateMessage((int)MouseButtonMessage.Move);
 					}
-				}
+
+					//if there is a drag event going on, send MouseEvents.Add(new DragEventArgs()
+					if ((int)MouseButtonState.Dragging == LeftButtonState.CurrentState)
+					{
+						MouseEvents.Add(new DragEventArgs()
+						{
+							Start = ClickStartPosition[(int)MouseButton.Left],
+							Current = MousePos,
+							Button = MouseButton.Left
+						});
+					}
+
+					}
 				else if (LMouseRelease)
 				{
 					LeftButtonState.SendStateMessage((int)MouseButtonMessage.Release);
@@ -262,29 +267,14 @@ namespace MouseBuddy
 					break;
 				case (int)MouseButtonState.Held:
 					{
-						switch (newState)
+						if ((int)MouseButtonState.Neutral == newState)
 						{
-							case (int)MouseButtonState.Neutral:
-								{
-									//fire off click event
-									MouseEvents.Add(new ClickEventArgs()
-									{
-										Position = MousePos,
-										Button = button
-									});
-								}
-								break;
-							case (int)MouseButtonState.Dragging:
-								{
-									//fire off dragging event
-									MouseEvents.Add(new DragEventArgs()
-									{
-										Start = ClickStartPosition[(int)button],
-										Current = MousePos,
-										Button = button
-									});
-								}
-								break;
+							//fire off click event
+							MouseEvents.Add(new ClickEventArgs()
+							{
+								Position = MousePos,
+								Button = button
+							});
 						}
 					}
 					break;

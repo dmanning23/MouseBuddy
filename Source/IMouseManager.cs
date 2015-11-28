@@ -8,8 +8,13 @@ namespace MouseBuddy
 	/// <summary>
 	/// Interface for an object that manages some simple mouse state junk.
 	/// </summary>
-	public interface IMouseManager : IUpdateable
+	public interface IMouseManager
 	{
+		Vector2 MousePos
+		{
+			get;
+		}
+
 		/// <summary>
 		/// Get the list of current mouse events.
 		/// This list is flushed and repopulated every update.

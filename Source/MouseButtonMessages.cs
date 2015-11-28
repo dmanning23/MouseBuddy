@@ -1,7 +1,7 @@
 
 namespace MouseBuddy
 {
-	internal enum MouseButtonMessage
+	public enum MouseButtonMessage
 	{
 		Press,
 		Move,

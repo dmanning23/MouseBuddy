@@ -1,7 +1,7 @@
 
 namespace MouseBuddy
 {
-	internal enum MouseButtonState
+	public enum MouseButtonState
 	{
 		Neutral,
 		Held,
