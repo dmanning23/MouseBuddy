@@ -140,6 +140,7 @@ namespace MouseBuddy
 			LeftButtonState = new StateMachine();
 			InitStateMachine(LeftButtonState);
 			LeftButtonState.StateChangedEvent += OnLButtonStateChange;
+
 			RightButtonState = new StateMachine();
 			InitStateMachine(RightButtonState);
 			RightButtonState.StateChangedEvent += OnRButtonStateChange;
