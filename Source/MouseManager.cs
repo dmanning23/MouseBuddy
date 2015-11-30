@@ -211,6 +211,7 @@ namespace MouseBuddy
 						{
 							Start = ClickStartPosition[(int)MouseButton.Left],
 							Current = MousePos,
+							Delta = (CurrentMouseState.Position - LastMouseState.Position).ToVector2(),
 							Button = MouseButton.Left
 						});
 					}
@@ -288,6 +289,7 @@ namespace MouseBuddy
 							{
 								Start = ClickStartPosition[(int)button],
 								Drop = MousePos,
+								Delta = (CurrentMouseState.Position - LastMouseState.Position).ToVector2(),
 								Button = button
 							});
 						}
