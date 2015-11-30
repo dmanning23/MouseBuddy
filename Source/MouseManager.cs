@@ -284,12 +284,20 @@ namespace MouseBuddy
 					{
 						if (newState == (int)MouseButtonState.Neutral)
 						{
+							//Add the last drag event to get the end of the line
+							MouseEvents.Add(new DragEventArgs()
+							{
+								Start = ClickStartPosition[(int)MouseButton.Left],
+								Current = MousePos,
+								Delta = (CurrentMouseState.Position - LastMouseState.Position).ToVector2(),
+								Button = MouseButton.Left
+							});
+
 							//fire off drop event
 							MouseEvents.Add(new DropEventArgs()
 							{
 								Start = ClickStartPosition[(int)button],
 								Drop = MousePos,
-								Delta = (CurrentMouseState.Position - LastMouseState.Position).ToVector2(),
 								Button = button
 							});
 						}

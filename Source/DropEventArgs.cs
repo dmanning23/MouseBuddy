@@ -25,14 +25,6 @@ namespace MouseBuddy
 		}
 
 		/// <summary>
-		/// The amount of change since last update
-		/// </summary>
-		public Vector2 Delta
-		{
-			get; set;
-		}
-
-		/// <summary>
 		/// which button was clicked
 		/// </summary>
 		public MouseButton Button
