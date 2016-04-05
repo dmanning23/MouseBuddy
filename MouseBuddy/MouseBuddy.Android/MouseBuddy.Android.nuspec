@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+    <metadata>
+        <id>MouseBuddy.Android</id>
+        <version>1.0.1</version>
+        <title>MouseBuddy.Android</title>
+        <authors>dmanning23</authors>
+		<owners>dmanning23</owners>
+		<projectUrl>https://github.com/dmanning23/MouseBuddy</projectUrl>
+		<licenseUrl>https://github.com/dmanning23/MouseBuddy/blob/master/LICENSE.txt</licenseUrl>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<description>A MonoGame component for doing simple mouse interaction</description>
+		<releaseNotes />
+		<copyright>Copyright 2016</copyright>
+		<tags>MonoGame Android</tags>
+		<dependencies>
+			<dependency id="MonoGame.Framework.Android" version="(3.5,)"/>
+			<dependency id="FilenameBuddy.Android" version="(1.0,)"/>
+			<dependency id="GameTimer.Android" version="(1.0,)"/>
+			<dependency id="StateMachineBuddy.Android" version="(1.0,)"/>
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="Y:\Documents\Projects\MouseBuddy\MouseBuddy\MouseBuddy.Android\bin\Release\MouseBuddy.Android.pdb" target="lib\MouseBuddy.Android.pdb" />
+        <file src="Y:\Documents\Projects\MouseBuddy\MouseBuddy\MouseBuddy.Android\bin\Release\MouseBuddy.Android.dll" target="lib\MouseBuddy.Android.dll" />
+    </files>
+</package>
