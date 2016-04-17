@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Input;
 using StateMachineBuddy;
+using InputHelper;
 
 namespace MouseBuddy
 {
@@ -115,10 +116,24 @@ namespace MouseBuddy
 			}
 		}
 
-		public List<EventArgs> MouseEvents
+		public List<ClickEventArgs> Clicks
 		{
-			get;
-			private set;
+			get; private set;
+		}
+
+		public List<HighlightEventArgs> Highlights
+		{
+			get; private set;
+		}
+
+		public List<DragEventArgs> Drags
+		{
+			get; private set;
+		}
+
+		public List<DropEventArgs> Drops
+		{
+			get; private set;
 		}
 
 		#endregion //Properties
@@ -132,7 +147,11 @@ namespace MouseBuddy
 		{
 			CurrentMouseState = new MouseState();
 			LastMouseState = new MouseState();
-			MouseEvents = new List<EventArgs>();
+
+			Clicks = new List<ClickEventArgs>();
+			Highlights = new List<HighlightEventArgs>();
+			Drags = new List<DragEventArgs>();
+			Drops = new List<DropEventArgs>();
 
 			ClickStartPosition = new Vector2[Enum.GetValues(typeof(MouseButton)).Length];
 
@@ -187,10 +206,19 @@ namespace MouseBuddy
 			CurrentMouseState = Mouse.GetState();
 
 			//clear the mouse events
-			MouseEvents.Clear();
+			Clicks.Clear();
+			Highlights.Clear();
+			Drags.Clear();
+			Drops.Clear();
 
 			if (isActive)
 			{
+				//create the highlight event
+				Highlights.Add(new HighlightEventArgs()
+				{
+					Position = MousePos
+				});
+
 				//check if mouse is clicked
 				if (LMouseClick)
 				{
@@ -207,7 +235,7 @@ namespace MouseBuddy
 					//if there is a drag event going on, send MouseEvents.Add(new DragEventArgs()
 					if ((int)MouseButtonState.Dragging == LeftButtonState.CurrentState)
 					{
-						MouseEvents.Add(new DragEventArgs()
+						Drags.Add(new DragEventArgs()
 						{
 							Start = ClickStartPosition[(int)MouseButton.Left],
 							Current = MousePos,
@@ -257,13 +285,13 @@ namespace MouseBuddy
 					{
 						if (newState == (int)MouseButtonState.Held)
 						{
-							//fire off button down event
-							ClickStartPosition[(int)button] = MousePos;
-							MouseEvents.Add(new ButtonDownEventArgs()
-							{
-								Position = MousePos,
-								Button = button
-							});
+							////fire off button down event
+							//ClickStartPosition[(int)button] = MousePos;
+							//MouseEvents.Add(new ButtonDownEventArgs()
+							//{
+							//	Position = MousePos,
+							//	Button = button
+							//});
 						}
 					}
 					break;
@@ -272,7 +300,7 @@ namespace MouseBuddy
 						if ((int)MouseButtonState.Neutral == newState)
 						{
 							//fire off click event
-							MouseEvents.Add(new ClickEventArgs()
+							Clicks.Add(new ClickEventArgs()
 							{
 								Position = MousePos,
 								Button = button
@@ -285,7 +313,7 @@ namespace MouseBuddy
 						if (newState == (int)MouseButtonState.Neutral)
 						{
 							//Add the last drag event to get the end of the line
-							MouseEvents.Add(new DragEventArgs()
+							Drags.Add(new DragEventArgs()
 							{
 								Start = ClickStartPosition[(int)MouseButton.Left],
 								Current = MousePos,
@@ -294,7 +322,7 @@ namespace MouseBuddy
 							});
 
 							//fire off drop event
-							MouseEvents.Add(new DropEventArgs()
+							Drops.Add(new DropEventArgs()
 							{
 								Start = ClickStartPosition[(int)button],
 								Drop = MousePos,

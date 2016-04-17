@@ -39,12 +39,16 @@
       <HintPath>..\packages\GameTimer.iOS.1.0.7\lib\GameTimer.iOS.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="InputHelper.iOS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\InputHelper.iOS.1.0.2\lib\InputHelper.iOS.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="MonoGame.Framework, Version=3.5.1.1679, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\MonoGame.Framework.iOS.3.5.1.1679\lib\XamariniOS\MonoGame.Framework.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="StateMachineBuddy.iOS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\StateMachineBuddy.iOS.1.0.0\lib\StateMachineBuddy.iOS.dll</HintPath>
+      <HintPath>..\packages\StateMachineBuddy.iOS.1.0.1\lib\StateMachineBuddy.iOS.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -56,23 +60,8 @@
     <Folder Include="Resources\" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\..\Source\ButtonDownEventArgs.cs">
-      <Link>ButtonDownEventArgs.cs</Link>
-    </Compile>
-    <Compile Include="..\..\Source\ClickEventArgs.cs">
-      <Link>ClickEventArgs.cs</Link>
-    </Compile>
-    <Compile Include="..\..\Source\DragEventArgs.cs">
-      <Link>DragEventArgs.cs</Link>
-    </Compile>
-    <Compile Include="..\..\Source\DropEventArgs.cs">
-      <Link>DropEventArgs.cs</Link>
-    </Compile>
     <Compile Include="..\..\Source\IMouseManager.cs">
       <Link>IMouseManager.cs</Link>
-    </Compile>
-    <Compile Include="..\..\Source\MouseButton.cs">
-      <Link>MouseButton.cs</Link>
     </Compile>
     <Compile Include="..\..\Source\MouseButtonMessages.cs">
       <Link>MouseButtonMessages.cs</Link>

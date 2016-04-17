@@ -1,8 +1,7 @@
+using Microsoft.Xna.Framework;
 using System;
 using System.Collections.Generic;
-using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Input;
-using StateMachineBuddy;
+using InputHelper;
 
 namespace MouseBuddy
 {
@@ -18,19 +17,43 @@ namespace MouseBuddy
 			get; private set;
 		}
 
-		public List<EventArgs> MouseEvents
-		{
-			get
-			{
-				return MouseManager.MouseEvents;
-            }
-		}
-
 		public Vector2 MousePos
 		{
 			get
 			{
 				return MouseManager.MousePos;
+			}
+		}
+
+		public List<ClickEventArgs> Clicks
+		{
+			get
+			{
+				return MouseManager.Clicks;
+			}
+		}
+
+		public List<HighlightEventArgs> Highlights
+		{
+			get
+			{
+				return MouseManager.Highlights;
+			}
+		}
+
+		public List<DragEventArgs> Drags
+		{
+			get
+			{
+				return MouseManager.Drags;
+			}
+		}
+
+		public List<DropEventArgs> Drops
+		{
+			get
+			{
+				return MouseManager.Drops;
 			}
 		}
 
@@ -48,7 +71,7 @@ namespace MouseBuddy
 
 			//Register ourselves to implement the DI container service.
 			game.Components.Add(this);
-			game.Services.AddService(typeof(IMouseManager), this);
+			game.Services.AddService(typeof(IInputHelper), this);
 		}
 		
 		#endregion //Initialization

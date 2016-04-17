@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata>
         <id>MouseBuddy.Android</id>
-        <version>1.0.1</version>
+        <version>1.0.2</version>
         <title>MouseBuddy.Android</title>
         <authors>dmanning23</authors>
 		<owners>dmanning23</owners>
@@ -14,14 +14,15 @@
 		<copyright>Copyright 2016</copyright>
 		<tags>MonoGame Android</tags>
 		<dependencies>
-			<dependency id="MonoGame.Framework.Android" version="(3.5,)"/>
-			<dependency id="FilenameBuddy.Android" version="(1.0,)"/>
-			<dependency id="GameTimer.Android" version="(1.0,)"/>
-			<dependency id="StateMachineBuddy.Android" version="(1.0,)"/>
+			<dependency id="MonoGame.Framework.Android" version="3.5"/>
+			<dependency id="FilenameBuddy.Android" version="1.0"/>
+			<dependency id="GameTimer.Android" version="1.0"/>
+			<dependency id="StateMachineBuddy.Android" version="1.0"/>
+			<dependency id="InputHelper.Android" version="1.0"/>
         </dependencies>
     </metadata>
     <files>
-        <file src="Y:\Documents\Projects\MouseBuddy\MouseBuddy\MouseBuddy.Android\bin\Release\MouseBuddy.Android.pdb" target="lib\MouseBuddy.Android.pdb" />
-        <file src="Y:\Documents\Projects\MouseBuddy\MouseBuddy\MouseBuddy.Android\bin\Release\MouseBuddy.Android.dll" target="lib\MouseBuddy.Android.dll" />
+        <file src="bin\Release\MouseBuddy.Android.pdb" target="lib\MouseBuddy.Android.pdb" />
+        <file src="bin\Release\MouseBuddy.Android.dll" target="lib\MouseBuddy.Android.dll" />
     </files>
 </package>
