@@ -243,8 +243,7 @@ namespace MouseBuddy
 							Button = MouseButton.Left
 						});
 					}
-
-					}
+				}
 				else if (LMouseRelease)
 				{
 					LeftButtonState.SendStateMessage((int)MouseButtonMessage.Release);
@@ -285,8 +284,8 @@ namespace MouseBuddy
 					{
 						if (newState == (int)MouseButtonState.Held)
 						{
-							////fire off button down event
-							//ClickStartPosition[(int)button] = MousePos;
+							//fire off button down event
+							ClickStartPosition[(int)button] = MousePos;
 							//MouseEvents.Add(new ButtonDownEventArgs()
 							//{
 							//	Position = MousePos,

@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
-    <metadata>
-        <id>MouseBuddy.Android</id>
-        <version>1.0.2</version>
-        <title>MouseBuddy.Android</title>
-        <authors>dmanning23</authors>
+	<metadata>
+		<id>MouseBuddy.Android</id>
+		<version>1.0.3</version>
+		<title>MouseBuddy.Android</title>
+		<authors>dmanning23</authors>
 		<owners>dmanning23</owners>
 		<projectUrl>https://github.com/dmanning23/MouseBuddy</projectUrl>
 		<licenseUrl>https://github.com/dmanning23/MouseBuddy/blob/master/LICENSE.txt</licenseUrl>
@@ -19,10 +19,10 @@
 			<dependency id="GameTimer.Android" version="1.0"/>
 			<dependency id="StateMachineBuddy.Android" version="1.0"/>
 			<dependency id="InputHelper.Android" version="1.0"/>
-        </dependencies>
-    </metadata>
-    <files>
-        <file src="bin\Release\MouseBuddy.Android.pdb" target="lib\MouseBuddy.Android.pdb" />
-        <file src="bin\Release\MouseBuddy.Android.dll" target="lib\MouseBuddy.Android.dll" />
-    </files>
+		</dependencies>
+	</metadata>
+	<files>
+		<file src="bin\Release\MouseBuddy.Android.pdb" target="lib\MouseBuddy.Android.pdb" />
+		<file src="bin\Release\MouseBuddy.Android.dll" target="lib\MouseBuddy.Android.dll" />
+	</files>
 </package>
