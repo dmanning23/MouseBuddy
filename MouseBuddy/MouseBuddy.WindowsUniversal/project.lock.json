@@ -15,14 +15,11 @@
           "lib/uap10.0/FilenameBuddy.WindowsUniversal.dll": {}
         }
       },
-      "InputHelper/1.0.0": {
+      "InputHelper/1.0.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
-          "MonoGame.Framework.WindowsUniversal": "3.5.0",
-          "SharpDX": "[3.0.0]",
-          "SharpDX.Direct2D1": "[3.0.0]",
-          "SharpDX.Direct3D11": "[3.0.0]"
+          "MonoGame.Framework.WindowsUniversal": "3.5.0"
         },
         "compile": {
           "lib/uap10.0/InputHelper.WindowsUniversal.dll": {}
@@ -313,53 +310,6 @@
         },
         "runtime": {
           "lib/netcore/MonoGame.Framework.dll": {}
-        }
-      },
-      "SharpDX/3.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.dll": {}
-        }
-      },
-      "SharpDX.Direct2D1/3.0.0": {
-        "type": "package",
-        "dependencies": {
-          "SharpDX": "3.0.0",
-          "SharpDX.DXGI": "3.0.0"
-        },
-        "compile": {
-          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Direct2D1.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Direct2D1.dll": {}
-        }
-      },
-      "SharpDX.Direct3D11/3.0.0": {
-        "type": "package",
-        "dependencies": {
-          "SharpDX": "3.0.0",
-          "SharpDX.DXGI": "3.0.0"
-        },
-        "compile": {
-          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Direct3D11.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Direct3D11.dll": {}
-        }
-      },
-      "SharpDX.DXGI/3.0.0": {
-        "type": "package",
-        "dependencies": {
-          "SharpDX": "3.0.0"
-        },
-        "compile": {
-          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.DXGI.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.DXGI.dll": {}
         }
       },
       "StateMachineBuddy/1.0.0": {
@@ -1990,14 +1940,11 @@
           "lib/uap10.0/FilenameBuddy.WindowsUniversal.dll": {}
         }
       },
-      "InputHelper/1.0.0": {
+      "InputHelper/1.0.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
-          "MonoGame.Framework.WindowsUniversal": "3.5.0",
-          "SharpDX": "[3.0.0]",
-          "SharpDX.Direct2D1": "[3.0.0]",
-          "SharpDX.Direct3D11": "[3.0.0]"
+          "MonoGame.Framework.WindowsUniversal": "3.5.0"
         },
         "compile": {
           "lib/uap10.0/InputHelper.WindowsUniversal.dll": {}
@@ -2289,53 +2236,6 @@
           "runtimes/win8-arm/native/mscordbi.dll": {},
           "runtimes/win8-arm/native/mscorrc.debug.dll": {},
           "runtimes/win8-arm/native/mscorrc.dll": {}
-        }
-      },
-      "SharpDX/3.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.dll": {}
-        }
-      },
-      "SharpDX.Direct2D1/3.0.0": {
-        "type": "package",
-        "dependencies": {
-          "SharpDX": "3.0.0",
-          "SharpDX.DXGI": "3.0.0"
-        },
-        "compile": {
-          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Direct2D1.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Direct2D1.dll": {}
-        }
-      },
-      "SharpDX.Direct3D11/3.0.0": {
-        "type": "package",
-        "dependencies": {
-          "SharpDX": "3.0.0",
-          "SharpDX.DXGI": "3.0.0"
-        },
-        "compile": {
-          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Direct3D11.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Direct3D11.dll": {}
-        }
-      },
-      "SharpDX.DXGI/3.0.0": {
-        "type": "package",
-        "dependencies": {
-          "SharpDX": "3.0.0"
-        },
-        "compile": {
-          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.DXGI.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.DXGI.dll": {}
         }
       },
       "StateMachineBuddy/1.0.0": {
@@ -3831,14 +3731,11 @@
           "lib/uap10.0/FilenameBuddy.WindowsUniversal.dll": {}
         }
       },
-      "InputHelper/1.0.0": {
+      "InputHelper/1.0.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
-          "MonoGame.Framework.WindowsUniversal": "3.5.0",
-          "SharpDX": "[3.0.0]",
-          "SharpDX.Direct2D1": "[3.0.0]",
-          "SharpDX.Direct3D11": "[3.0.0]"
+          "MonoGame.Framework.WindowsUniversal": "3.5.0"
         },
         "compile": {
           "lib/uap10.0/InputHelper.WindowsUniversal.dll": {}
@@ -4108,53 +4005,6 @@
         },
         "runtime": {
           "runtimes/win8-aot/lib/netcore50/System.Private.DataContractSerialization.dll": {}
-        }
-      },
-      "SharpDX/3.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.dll": {}
-        }
-      },
-      "SharpDX.Direct2D1/3.0.0": {
-        "type": "package",
-        "dependencies": {
-          "SharpDX": "3.0.0",
-          "SharpDX.DXGI": "3.0.0"
-        },
-        "compile": {
-          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Direct2D1.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Direct2D1.dll": {}
-        }
-      },
-      "SharpDX.Direct3D11/3.0.0": {
-        "type": "package",
-        "dependencies": {
-          "SharpDX": "3.0.0",
-          "SharpDX.DXGI": "3.0.0"
-        },
-        "compile": {
-          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Direct3D11.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Direct3D11.dll": {}
-        }
-      },
-      "SharpDX.DXGI/3.0.0": {
-        "type": "package",
-        "dependencies": {
-          "SharpDX": "3.0.0"
-        },
-        "compile": {
-          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.DXGI.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.DXGI.dll": {}
         }
       },
       "StateMachineBuddy/1.0.0": {
@@ -5629,14 +5479,11 @@
           "lib/uap10.0/FilenameBuddy.WindowsUniversal.dll": {}
         }
       },
-      "InputHelper/1.0.0": {
+      "InputHelper/1.0.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
-          "MonoGame.Framework.WindowsUniversal": "3.5.0",
-          "SharpDX": "[3.0.0]",
-          "SharpDX.Direct2D1": "[3.0.0]",
-          "SharpDX.Direct3D11": "[3.0.0]"
+          "MonoGame.Framework.WindowsUniversal": "3.5.0"
         },
         "compile": {
           "lib/uap10.0/InputHelper.WindowsUniversal.dll": {}
@@ -5937,53 +5784,6 @@
           "runtimes/win7-x64/native/mscordbi.dll": {},
           "runtimes/win7-x64/native/mscorrc.debug.dll": {},
           "runtimes/win7-x64/native/mscorrc.dll": {}
-        }
-      },
-      "SharpDX/3.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.dll": {}
-        }
-      },
-      "SharpDX.Direct2D1/3.0.0": {
-        "type": "package",
-        "dependencies": {
-          "SharpDX": "3.0.0",
-          "SharpDX.DXGI": "3.0.0"
-        },
-        "compile": {
-          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Direct2D1.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Direct2D1.dll": {}
-        }
-      },
-      "SharpDX.Direct3D11/3.0.0": {
-        "type": "package",
-        "dependencies": {
-          "SharpDX": "3.0.0",
-          "SharpDX.DXGI": "3.0.0"
-        },
-        "compile": {
-          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Direct3D11.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Direct3D11.dll": {}
-        }
-      },
-      "SharpDX.DXGI/3.0.0": {
-        "type": "package",
-        "dependencies": {
-          "SharpDX": "3.0.0"
-        },
-        "compile": {
-          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.DXGI.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.DXGI.dll": {}
         }
       },
       "StateMachineBuddy/1.0.0": {
@@ -7479,14 +7279,11 @@
           "lib/uap10.0/FilenameBuddy.WindowsUniversal.dll": {}
         }
       },
-      "InputHelper/1.0.0": {
+      "InputHelper/1.0.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
-          "MonoGame.Framework.WindowsUniversal": "3.5.0",
-          "SharpDX": "[3.0.0]",
-          "SharpDX.Direct2D1": "[3.0.0]",
-          "SharpDX.Direct3D11": "[3.0.0]"
+          "MonoGame.Framework.WindowsUniversal": "3.5.0"
         },
         "compile": {
           "lib/uap10.0/InputHelper.WindowsUniversal.dll": {}
@@ -7756,53 +7553,6 @@
         },
         "runtime": {
           "runtimes/win8-aot/lib/netcore50/System.Private.DataContractSerialization.dll": {}
-        }
-      },
-      "SharpDX/3.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.dll": {}
-        }
-      },
-      "SharpDX.Direct2D1/3.0.0": {
-        "type": "package",
-        "dependencies": {
-          "SharpDX": "3.0.0",
-          "SharpDX.DXGI": "3.0.0"
-        },
-        "compile": {
-          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Direct2D1.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Direct2D1.dll": {}
-        }
-      },
-      "SharpDX.Direct3D11/3.0.0": {
-        "type": "package",
-        "dependencies": {
-          "SharpDX": "3.0.0",
-          "SharpDX.DXGI": "3.0.0"
-        },
-        "compile": {
-          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Direct3D11.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Direct3D11.dll": {}
-        }
-      },
-      "SharpDX.DXGI/3.0.0": {
-        "type": "package",
-        "dependencies": {
-          "SharpDX": "3.0.0"
-        },
-        "compile": {
-          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.DXGI.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.DXGI.dll": {}
         }
       },
       "StateMachineBuddy/1.0.0": {
@@ -9277,14 +9027,11 @@
           "lib/uap10.0/FilenameBuddy.WindowsUniversal.dll": {}
         }
       },
-      "InputHelper/1.0.0": {
+      "InputHelper/1.0.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
-          "MonoGame.Framework.WindowsUniversal": "3.5.0",
-          "SharpDX": "[3.0.0]",
-          "SharpDX.Direct2D1": "[3.0.0]",
-          "SharpDX.Direct3D11": "[3.0.0]"
+          "MonoGame.Framework.WindowsUniversal": "3.5.0"
         },
         "compile": {
           "lib/uap10.0/InputHelper.WindowsUniversal.dll": {}
@@ -9585,53 +9332,6 @@
           "runtimes/win7-x86/native/mscordbi.dll": {},
           "runtimes/win7-x86/native/mscorrc.debug.dll": {},
           "runtimes/win7-x86/native/mscorrc.dll": {}
-        }
-      },
-      "SharpDX/3.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.dll": {}
-        }
-      },
-      "SharpDX.Direct2D1/3.0.0": {
-        "type": "package",
-        "dependencies": {
-          "SharpDX": "3.0.0",
-          "SharpDX.DXGI": "3.0.0"
-        },
-        "compile": {
-          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Direct2D1.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Direct2D1.dll": {}
-        }
-      },
-      "SharpDX.Direct3D11/3.0.0": {
-        "type": "package",
-        "dependencies": {
-          "SharpDX": "3.0.0",
-          "SharpDX.DXGI": "3.0.0"
-        },
-        "compile": {
-          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Direct3D11.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Direct3D11.dll": {}
-        }
-      },
-      "SharpDX.DXGI/3.0.0": {
-        "type": "package",
-        "dependencies": {
-          "SharpDX": "3.0.0"
-        },
-        "compile": {
-          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.DXGI.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.DXGI.dll": {}
         }
       },
       "StateMachineBuddy/1.0.0": {
@@ -11127,14 +10827,11 @@
           "lib/uap10.0/FilenameBuddy.WindowsUniversal.dll": {}
         }
       },
-      "InputHelper/1.0.0": {
+      "InputHelper/1.0.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
-          "MonoGame.Framework.WindowsUniversal": "3.5.0",
-          "SharpDX": "[3.0.0]",
-          "SharpDX.Direct2D1": "[3.0.0]",
-          "SharpDX.Direct3D11": "[3.0.0]"
+          "MonoGame.Framework.WindowsUniversal": "3.5.0"
         },
         "compile": {
           "lib/uap10.0/InputHelper.WindowsUniversal.dll": {}
@@ -11404,53 +11101,6 @@
         },
         "runtime": {
           "runtimes/win8-aot/lib/netcore50/System.Private.DataContractSerialization.dll": {}
-        }
-      },
-      "SharpDX/3.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.dll": {}
-        }
-      },
-      "SharpDX.Direct2D1/3.0.0": {
-        "type": "package",
-        "dependencies": {
-          "SharpDX": "3.0.0",
-          "SharpDX.DXGI": "3.0.0"
-        },
-        "compile": {
-          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Direct2D1.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Direct2D1.dll": {}
-        }
-      },
-      "SharpDX.Direct3D11/3.0.0": {
-        "type": "package",
-        "dependencies": {
-          "SharpDX": "3.0.0",
-          "SharpDX.DXGI": "3.0.0"
-        },
-        "compile": {
-          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Direct3D11.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Direct3D11.dll": {}
-        }
-      },
-      "SharpDX.DXGI/3.0.0": {
-        "type": "package",
-        "dependencies": {
-          "SharpDX": "3.0.0"
-        },
-        "compile": {
-          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.DXGI.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.DXGI.dll": {}
         }
       },
       "StateMachineBuddy/1.0.0": {
@@ -12930,11 +12580,11 @@
         "lib/uap10.0/FilenameBuddy.WindowsUniversal.pdb"
       ]
     },
-    "InputHelper/1.0.0": {
-      "sha512": "pLbj2Wu3go3AgcyCDQx6ms5V/hmi796gdeFrkUnJuugEt2Z3L9yzVvyE7ipTeiKvX7me6I0UaQ+cFkSpt2Sgvg==",
+    "InputHelper/1.0.2": {
+      "sha512": "aE8Q4vmmqRrs7UViaiGmepE/AdI16lHQ5LhhK2LnUmBHGZtuEdrPExnNg0cHiksDHabE7wGgw9syprqFn2lLPg==",
       "type": "package",
       "files": [
-        "InputHelper.1.0.0.nupkg.sha512",
+        "InputHelper.1.0.2.nupkg.sha512",
         "InputHelper.nuspec",
         "lib/MonoAndroid10/InputHelper.Android.dll",
         "lib/MonoAndroid10/InputHelper.Android.pdb",
@@ -13631,54 +13281,6 @@
         "runtimes/win8-arm/native/mscordbi.dll",
         "runtimes/win8-arm/native/mscorrc.debug.dll",
         "runtimes/win8-arm/native/mscorrc.dll"
-      ]
-    },
-    "SharpDX/3.0.0": {
-      "sha512": "HjBoC6dxcssXWZvBD0rkRQciXXygaTvjOlfaHb8WWMFNJCZQBWFiTE1sFsoqwQMdSvt0KCko9X/+EvROHR16ng==",
-      "type": "package",
-      "files": [
-        "SharpDX.3.0.0.nupkg.sha512",
-        "SharpDX.nuspec",
-        "lib/net45/SharpDX.dll",
-        "lib/net45/SharpDX.xml",
-        "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.dll",
-        "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.xml"
-      ]
-    },
-    "SharpDX.Direct2D1/3.0.0": {
-      "sha512": "eq08/vzV+BSkvVhFa81+eL7xkxZ+ABxJVdcJWv/700475EnpC3Ojb1dsvtTJzIRjOa8tHUgEQliI0hyZCkl5IQ==",
-      "type": "package",
-      "files": [
-        "SharpDX.Direct2D1.3.0.0.nupkg.sha512",
-        "SharpDX.Direct2D1.nuspec",
-        "lib/net45/SharpDX.Direct2D1.dll",
-        "lib/net45/SharpDX.Direct2D1.xml",
-        "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Direct2D1.dll",
-        "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Direct2D1.xml"
-      ]
-    },
-    "SharpDX.Direct3D11/3.0.0": {
-      "sha512": "4WyPEjj7i5eDuWWsxEJ4tACKS9BqiF0OYyUWvh2MRVMgm0eJUYPtwsfKkjCFWqOFlDlkgGj5v5uxFRfBOWPFNw==",
-      "type": "package",
-      "files": [
-        "SharpDX.Direct3D11.3.0.0.nupkg.sha512",
-        "SharpDX.Direct3D11.nuspec",
-        "lib/net45/SharpDX.Direct3D11.dll",
-        "lib/net45/SharpDX.Direct3D11.xml",
-        "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Direct3D11.dll",
-        "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Direct3D11.xml"
-      ]
-    },
-    "SharpDX.DXGI/3.0.0": {
-      "sha512": "m3eXW7hT8OSZCrqqnHofpu6M095omztmberjrtDxuwlerdkGcw43Io13FkgCH6IrahfxDWZXQ3O4RIq+ClCNlA==",
-      "type": "package",
-      "files": [
-        "SharpDX.DXGI.3.0.0.nupkg.sha512",
-        "SharpDX.DXGI.nuspec",
-        "lib/net45/SharpDX.DXGI.dll",
-        "lib/net45/SharpDX.DXGI.xml",
-        "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.DXGI.dll",
-        "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.DXGI.xml"
       ]
     },
     "StateMachineBuddy/1.0.0": {
@@ -16299,7 +15901,7 @@
   },
   "projectFileDependencyGroups": {
     "": [
-      "InputHelper >= 1.0.0",
+      "InputHelper >= 1.0.2",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.1.0",
       "StateMachineBuddy >= 1.0.0"
     ],
