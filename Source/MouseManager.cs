@@ -1,9 +1,9 @@
-using System;
-using System.Collections.Generic;
+using InputHelper;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Input;
 using StateMachineBuddy;
-using InputHelper;
+using System;
+using System.Collections.Generic;
 
 namespace MouseBuddy
 {

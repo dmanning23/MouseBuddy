@@ -1,5 +1,5 @@
-using Microsoft.Xna.Framework;
 using InputHelper;
+using Microsoft.Xna.Framework;
 
 namespace MouseBuddy
 {

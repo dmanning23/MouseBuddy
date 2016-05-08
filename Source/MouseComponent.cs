@@ -1,7 +1,6 @@
-using Microsoft.Xna.Framework;
-using System;
-using System.Collections.Generic;
 using InputHelper;
+using Microsoft.Xna.Framework;
+using System.Collections.Generic;
 
 namespace MouseBuddy
 {

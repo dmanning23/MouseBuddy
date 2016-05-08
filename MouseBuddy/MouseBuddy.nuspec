@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
 	<metadata>
 		<id>MouseBuddy</id>
-		<version>1.0.1</version>
+		<version>1.0.2</version>
 		<title>MouseBuddy</title>
 		<authors>dmanning23</authors>
 		<owners>dmanning23</owners>
@@ -21,6 +21,7 @@
 				<dependency id="FilenameBuddy" version="1.0.1"/>
 				<dependency id="InputHelper" version="1.0.1"/>
 				<dependency id="StateMachineBuddy" version="1.0"/>
+				<dependency id="PrimitiveBuddy" version="1.0"/>
 			</group>
 
 			<!--Xamarin.iOS Unified-->
@@ -29,6 +30,7 @@
 				<dependency id="FilenameBuddy" version="1.0.1"/>
 				<dependency id="InputHelper" version="1.0.1"/>
 				<dependency id="StateMachineBuddy" version="1.0"/>
+				<dependency id="PrimitiveBuddy" version="1.0"/>
 			</group>
 
 			<!--Win Universal-->
@@ -38,6 +40,7 @@
 				<dependency id="FilenameBuddy" version="1.0.1"/>
 				<dependency id="InputHelper" version="1.0.1"/>
 				<dependency id="StateMachineBuddy" version="1.0"/>
+				<dependency id="PrimitiveBuddy" version="1.0"/>
 			</group>
 
 			<group targetFramework="net451">
@@ -45,6 +48,7 @@
 				<dependency id="FilenameBuddy" version="1.0.1"/>
 				<dependency id="InputHelper" version="1.0.1"/>
 				<dependency id="StateMachineBuddy" version="1.0"/>
+				<dependency id="PrimitiveBuddy" version="1.0"/>
 			</group>
 
 		</dependencies>
