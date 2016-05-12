@@ -63,10 +63,10 @@ namespace MouseBuddy
 		/// <summary>
 		/// Constructs a new input state.
 		/// </summary>
-		public MouseComponent(Game game)
+		public MouseComponent(Game game, ConvertToGameCoord gameCoord)
 			: base(game)
 		{
-			MouseManager = new MouseManager();
+			MouseManager = new MouseManager(gameCoord);
 
 			//Register ourselves to implement the DI container service.
 			game.Components.Add(this);

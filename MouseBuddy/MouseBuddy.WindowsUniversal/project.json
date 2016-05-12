@@ -1,7 +1,7 @@
 ﻿{
   "dependencies": {
     "FilenameBuddy": "1.0.2",
-    "InputHelper": "1.0.11",
+    "InputHelper": "1.0.13",
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
     "PrimitiveBuddy": "1.0.0",
     "StateMachineBuddy": "1.0.0"

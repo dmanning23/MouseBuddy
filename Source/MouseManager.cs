@@ -3,14 +3,13 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Input;
 using StateMachineBuddy;
 using System;
-using System.Collections.Generic;
 
 namespace MouseBuddy
 {
 	/// <summary>
 	/// MonoGame componenet that manages some simple mouse state junk.
 	/// </summary>
-	public class MouseManager : IMouseManager
+	public class MouseManager : BaseInputManager, IMouseManager
 	{
 		#region Properties
 
@@ -42,7 +41,7 @@ namespace MouseBuddy
 		{
 			get
 			{
-				return new Vector2(CurrentMouseState.X, CurrentMouseState.Y);
+				return ConvertCoordinate(new Vector2(CurrentMouseState.X, CurrentMouseState.Y));
 			}
 		}
 
@@ -116,26 +115,6 @@ namespace MouseBuddy
 			}
 		}
 
-		public List<ClickEventArgs> Clicks
-		{
-			get; private set;
-		}
-
-		public List<HighlightEventArgs> Highlights
-		{
-			get; private set;
-		}
-
-		public List<DragEventArgs> Drags
-		{
-			get; private set;
-		}
-
-		public List<DropEventArgs> Drops
-		{
-			get; private set;
-		}
-
 		#endregion //Properties
 
 		#region Initialization
@@ -143,15 +122,10 @@ namespace MouseBuddy
 		/// <summary>
 		/// Constructs a new input state.
 		/// </summary>
-		public MouseManager()
+		public MouseManager(ConvertToGameCoord gameCoord) : base(gameCoord)
 		{
 			CurrentMouseState = new MouseState();
 			LastMouseState = new MouseState();
-
-			Clicks = new List<ClickEventArgs>();
-			Highlights = new List<HighlightEventArgs>();
-			Drags = new List<DragEventArgs>();
-			Drops = new List<DropEventArgs>();
 
 			ClickStartPosition = new Vector2[Enum.GetValues(typeof(MouseButton)).Length];
 
@@ -199,7 +173,7 @@ namespace MouseBuddy
 		/// <summary>
 		/// Update the mouse manager.
 		/// </summary>
-		public void Update(bool isActive)
+		public override void Update(bool isActive)
 		{
 			//update the mouse states
 			LastMouseState = CurrentMouseState;
@@ -239,7 +213,8 @@ namespace MouseBuddy
 						{
 							Start = ClickStartPosition[(int)MouseButton.Left],
 							Current = MousePos,
-							Delta = (CurrentMouseState.Position - LastMouseState.Position).ToVector2(),
+							Delta = (ConvertCoordinate(CurrentMouseState.Position.ToVector2()) -
+								ConvertCoordinate(LastMouseState.Position.ToVector2())),
 							Button = MouseButton.Left
 						});
 					}
@@ -316,7 +291,8 @@ namespace MouseBuddy
 							{
 								Start = ClickStartPosition[(int)MouseButton.Left],
 								Current = MousePos,
-								Delta = (CurrentMouseState.Position - LastMouseState.Position).ToVector2(),
+								Delta = (ConvertCoordinate(CurrentMouseState.Position.ToVector2()) -
+									ConvertCoordinate(LastMouseState.Position.ToVector2())),
 								Button = MouseButton.Left
 							});
 

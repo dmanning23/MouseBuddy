@@ -15,7 +15,7 @@
           "lib/uap10.0/FilenameBuddy.WindowsUniversal.dll": {}
         }
       },
-      "InputHelper/1.0.11": {
+      "InputHelper/1.0.13": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
@@ -2004,7 +2004,7 @@
           "lib/uap10.0/FilenameBuddy.WindowsUniversal.dll": {}
         }
       },
-      "InputHelper/1.0.11": {
+      "InputHelper/1.0.13": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
@@ -3859,7 +3859,7 @@
           "lib/uap10.0/FilenameBuddy.WindowsUniversal.dll": {}
         }
       },
-      "InputHelper/1.0.11": {
+      "InputHelper/1.0.13": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
@@ -5671,7 +5671,7 @@
           "lib/uap10.0/FilenameBuddy.WindowsUniversal.dll": {}
         }
       },
-      "InputHelper/1.0.11": {
+      "InputHelper/1.0.13": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
@@ -7535,7 +7535,7 @@
           "lib/uap10.0/FilenameBuddy.WindowsUniversal.dll": {}
         }
       },
-      "InputHelper/1.0.11": {
+      "InputHelper/1.0.13": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
@@ -9347,7 +9347,7 @@
           "lib/uap10.0/FilenameBuddy.WindowsUniversal.dll": {}
         }
       },
-      "InputHelper/1.0.11": {
+      "InputHelper/1.0.13": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
@@ -11211,7 +11211,7 @@
           "lib/uap10.0/FilenameBuddy.WindowsUniversal.dll": {}
         }
       },
-      "InputHelper/1.0.11": {
+      "InputHelper/1.0.13": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
@@ -13028,11 +13028,11 @@
         "lib/uap10.0/FilenameBuddy.WindowsUniversal.pdb"
       ]
     },
-    "InputHelper/1.0.11": {
-      "sha512": "4ZAsiFPI1K5MnTFHvsA9h0u9YpW4sXmg8FY7aGWrichChoE79wL0449m6xIu2QmWXPj3qV9yoF7kGgMAOkHkZw==",
+    "InputHelper/1.0.13": {
+      "sha512": "H+K/hIp4BD29AkGRfYSTePKQkLavXeCsE4DqjsHdAK2jrt24oyUXQpGlF9H/9KTNJziTcV9eja6+ioY0sknO7A==",
       "type": "package",
       "files": [
-        "InputHelper.1.0.11.nupkg.sha512",
+        "InputHelper.1.0.13.nupkg.sha512",
         "InputHelper.nuspec",
         "lib/MonoAndroid10/InputHelper.Android.dll",
         "lib/MonoAndroid10/InputHelper.Android.pdb",
@@ -16414,7 +16414,7 @@
   "projectFileDependencyGroups": {
     "": [
       "FilenameBuddy >= 1.0.2",
-      "InputHelper >= 1.0.11",
+      "InputHelper >= 1.0.13",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.1.0",
       "PrimitiveBuddy >= 1.0.0",
       "StateMachineBuddy >= 1.0.0"

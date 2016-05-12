@@ -15,7 +15,7 @@ namespace MouseBuddyTests
 		[Test]
 		public void Drag_DontMove()
 		{
-			var mouse = new Mock<MouseManager>() { CallBase = true };
+			var mouse = new Mock<MouseManager>(null) { CallBase = true };
 
 			mouse.Object.LeftButtonState.ForceState((int)MouseButtonState.Dragging);
 			mouse.Setup(x => x.LMouseDown).Returns(true);
@@ -29,7 +29,7 @@ namespace MouseBuddyTests
 		[Test]
 		public void Drag_Move()
 		{
-			var mouse = new Mock<MouseManager>() { CallBase = true };
+			var mouse = new Mock<MouseManager>(null) { CallBase = true };
 
 			mouse.Object.LeftButtonState.ForceState((int)MouseButtonState.Dragging);
 			mouse.Setup(x => x.LMouseDown).Returns(true);
