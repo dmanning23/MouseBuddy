@@ -3,7 +3,7 @@
   "version": 2,
   "targets": {
     "UAP,Version=v10.0": {
-      "FilenameBuddy/1.0.2": {
+      "FilenameBuddy/1.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0"
@@ -15,7 +15,7 @@
           "lib/uap10.0/FilenameBuddy.WindowsUniversal.dll": {}
         }
       },
-      "InputHelper/1.0.15": {
+      "InputHelper/1.0.16": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
@@ -1992,7 +1992,7 @@
       }
     },
     "UAP,Version=v10.0/win10-arm": {
-      "FilenameBuddy/1.0.2": {
+      "FilenameBuddy/1.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0"
@@ -2004,7 +2004,7 @@
           "lib/uap10.0/FilenameBuddy.WindowsUniversal.dll": {}
         }
       },
-      "InputHelper/1.0.15": {
+      "InputHelper/1.0.16": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
@@ -3847,7 +3847,7 @@
       }
     },
     "UAP,Version=v10.0/win10-arm-aot": {
-      "FilenameBuddy/1.0.2": {
+      "FilenameBuddy/1.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0"
@@ -3859,7 +3859,7 @@
           "lib/uap10.0/FilenameBuddy.WindowsUniversal.dll": {}
         }
       },
-      "InputHelper/1.0.15": {
+      "InputHelper/1.0.16": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
@@ -5659,7 +5659,7 @@
       }
     },
     "UAP,Version=v10.0/win10-x64": {
-      "FilenameBuddy/1.0.2": {
+      "FilenameBuddy/1.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0"
@@ -5671,7 +5671,7 @@
           "lib/uap10.0/FilenameBuddy.WindowsUniversal.dll": {}
         }
       },
-      "InputHelper/1.0.15": {
+      "InputHelper/1.0.16": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
@@ -7523,7 +7523,7 @@
       }
     },
     "UAP,Version=v10.0/win10-x64-aot": {
-      "FilenameBuddy/1.0.2": {
+      "FilenameBuddy/1.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0"
@@ -7535,7 +7535,7 @@
           "lib/uap10.0/FilenameBuddy.WindowsUniversal.dll": {}
         }
       },
-      "InputHelper/1.0.15": {
+      "InputHelper/1.0.16": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
@@ -9335,7 +9335,7 @@
       }
     },
     "UAP,Version=v10.0/win10-x86": {
-      "FilenameBuddy/1.0.2": {
+      "FilenameBuddy/1.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0"
@@ -9347,7 +9347,7 @@
           "lib/uap10.0/FilenameBuddy.WindowsUniversal.dll": {}
         }
       },
-      "InputHelper/1.0.15": {
+      "InputHelper/1.0.16": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
@@ -11199,7 +11199,7 @@
       }
     },
     "UAP,Version=v10.0/win10-x86-aot": {
-      "FilenameBuddy/1.0.2": {
+      "FilenameBuddy/1.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0"
@@ -11211,7 +11211,7 @@
           "lib/uap10.0/FilenameBuddy.WindowsUniversal.dll": {}
         }
       },
-      "InputHelper/1.0.15": {
+      "InputHelper/1.0.16": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
@@ -13012,11 +13012,11 @@
     }
   },
   "libraries": {
-    "FilenameBuddy/1.0.2": {
-      "sha512": "LIi0aT1JeQx0UveBSXk+hf2oLdH0b9y4GfM7kbO6uLJoGOpRQhxOCPFitDHc8ewFmdR2yX7fCnyq+tOLwd0Kdg==",
+    "FilenameBuddy/1.0.3": {
+      "sha512": "1tFJley50a9gEVyNDKHkNt9PVbfkfXbhf4P3OCmJVntUVmTzffpjhWKPyANfRJHi9Qd5vmLe+cjg8hOSnDjOhA==",
       "type": "package",
       "files": [
-        "FilenameBuddy.1.0.2.nupkg.sha512",
+        "FilenameBuddy.1.0.3.nupkg.sha512",
         "FilenameBuddy.nuspec",
         "lib/MonoAndroid10/FilenameBuddy.Android.dll",
         "lib/MonoAndroid10/FilenameBuddy.Android.pdb",
@@ -13028,11 +13028,11 @@
         "lib/uap10.0/FilenameBuddy.WindowsUniversal.pdb"
       ]
     },
-    "InputHelper/1.0.15": {
-      "sha512": "AaatgYluTp2tpm92Xs762uHg2PkXTSoUunBr+qprrv8eOmuJzS1HM0yQtwHCCAGd+fCWnjsmsKjsnTz82s/xTw==",
+    "InputHelper/1.0.16": {
+      "sha512": "xkMVgCvVS3jKi17gVf9Bh1jYGiXVFya9yvFvcPwVBvvMePitk+klVibNFB7NjZpX6lz7d+FQ0wtgnnM8puO9pg==",
       "type": "package",
       "files": [
-        "InputHelper.1.0.15.nupkg.sha512",
+        "InputHelper.1.0.16.nupkg.sha512",
         "InputHelper.nuspec",
         "lib/MonoAndroid10/InputHelper.Android.dll",
         "lib/MonoAndroid10/InputHelper.Android.pdb",
@@ -16413,8 +16413,8 @@
   },
   "projectFileDependencyGroups": {
     "": [
-      "FilenameBuddy >= 1.0.2",
-      "InputHelper >= 1.0.15",
+      "FilenameBuddy >= 1.0.3",
+      "InputHelper >= 1.0.16",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.1.0",
       "PrimitiveBuddy >= 1.0.0",
       "StateMachineBuddy >= 1.0.0"
