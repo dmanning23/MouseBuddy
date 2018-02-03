@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
 	<metadata>
 		<id>MouseBuddy</id>
-		<version>1.0.8</version>
+		<version>1.0.9</version>
 		<title>MouseBuddy</title>
 		<authors>dmanning23</authors>
 		<owners>dmanning23</owners>
@@ -44,7 +44,7 @@
 			</group>
 
 			<group targetFramework="net451">
-				<dependency id="MonoGame.Framework.DesktopGL" version="3.5"/>
+				<dependency id="MonoGame.Framework.WindowsDX" version="3.5"/>
 				<dependency id="FilenameBuddy" version="1.0.1"/>
 				<dependency id="InputHelper" version="1.0.1"/>
 				<dependency id="StateMachineBuddy" version="1.0"/>
@@ -67,9 +67,9 @@
 		<file src="MouseBuddy.WindowsUniversal\bin\Release\MouseBuddy.WindowsUniversal.pdb" target="lib\uap10.0\MouseBuddy.WindowsUniversal.pdb" />
 		<file src="MouseBuddy.WindowsUniversal\bin\Release\MouseBuddy.WindowsUniversal.dll" target="lib\uap10.0\MouseBuddy.WindowsUniversal.dll" />
 
-		<!--DesktopGL-->
-		<file src="MouseBuddy.DesktopGL\bin\Release\MouseBuddy.DesktopGL.pdb" target="lib\net451\MouseBuddy.DesktopGL.pdb" />
-		<file src="MouseBuddy.DesktopGL\bin\Release\MouseBuddy.DesktopGL.dll" target="lib\net451\MouseBuddy.DesktopGL.dll" />
+		<!--WindowsDX-->
+		<file src="MouseBuddy.WindowsDX\bin\Release\MouseBuddy.WindowsDX.pdb" target="lib\net451\MouseBuddy.WindowsDX.pdb" />
+		<file src="MouseBuddy.WindowsDX\bin\Release\MouseBuddy.WindowsDX.dll" target="lib\net451\MouseBuddy.WindowsDX.dll" />
 
 	</files>
 </package>

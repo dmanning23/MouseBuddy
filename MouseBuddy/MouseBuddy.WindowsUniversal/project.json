@@ -1,13 +1,17 @@
 ﻿{
   "dependencies": {
-    "FilenameBuddy": "1.0.3",
-    "InputHelper": "1.0.17",
+    "FilenameBuddy": "1.0.9",
+    "InputHelper": "1.0.21",
+    "MatrixExtensions": "1.0.3",
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
-    "PrimitiveBuddy": "1.0.2",
-    "StateMachineBuddy": "1.0.1"
+    "MonoGame.Framework.WindowsUniversal": "3.6.0.1625",
+    "PrimitiveBuddy": "1.0.4",
+    "StateMachineBuddy": "1.0.10",
+    "Vector2Extensions": "1.0.9",
+    "XmlBuddy": "1.0.19"
   },
   "frameworks": {
-    "uap10.0": {}
+    "uap10.0.10586": {}
   },
   "runtimes": {
     "win10-arm": {},

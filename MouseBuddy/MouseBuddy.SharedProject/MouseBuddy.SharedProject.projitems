@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>05c84eab-a13a-4356-9c4d-ba273b355e8f</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>MouseBuddy.SharedProject</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)IMouseManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MouseButtonMessages.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MouseButtonStates.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MouseComponent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MouseManager.cs" />
+  </ItemGroup>
+</Project>

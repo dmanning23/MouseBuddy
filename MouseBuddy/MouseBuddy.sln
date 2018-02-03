@@ -1,10 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2024
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MouseBuddy.DesktopGL", "MouseBuddy.DesktopGL\MouseBuddy.DesktopGL.csproj", "{EB84949D-E3D2-4311-A1D0-6A87A6253491}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MouseBuddy.Android", "MouseBuddy.Android\MouseBuddy.Android.csproj", "{18584843-B839-45F8-B36F-987B847A9ACD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MouseBuddy.Tests", "MouseBuddy.Tests\MouseBuddy.Tests.csproj", "{63B1D574-6FBE-4336-A27C-0972953DE904}"
@@ -19,7 +17,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		MouseBuddy.nuspec = MouseBuddy.nuspec
 	EndProjectSection
 EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "MouseBuddy.SharedProject", "MouseBuddy.SharedProject\MouseBuddy.SharedProject.shproj", "{05C84EAB-A13A-4356-9C4D-BA273B355E8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MouseBuddy.WindowsDX", "MouseBuddy.WindowsDX\MouseBuddy.WindowsDX.csproj", "{8CF9D714-C9C7-4126-8F01-046364A74937}"
+EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		MouseBuddy.SharedProject\MouseBuddy.SharedProject.projitems*{05c84eab-a13a-4356-9c4d-ba273b355e8f}*SharedItemsImports = 13
+		MouseBuddy.SharedProject\MouseBuddy.SharedProject.projitems*{18584843-b839-45f8-b36f-987b847a9acd}*SharedItemsImports = 4
+		MouseBuddy.SharedProject\MouseBuddy.SharedProject.projitems*{63b1d574-6fbe-4336-a27c-0972953de904}*SharedItemsImports = 4
+		MouseBuddy.SharedProject\MouseBuddy.SharedProject.projitems*{8cf9d714-c9c7-4126-8f01-046364a74937}*SharedItemsImports = 4
+		MouseBuddy.SharedProject\MouseBuddy.SharedProject.projitems*{bd7592c0-aa13-4adc-90f2-acb8c97f5214}*SharedItemsImports = 4
+		MouseBuddy.SharedProject\MouseBuddy.SharedProject.projitems*{c57b94b5-b2c3-46d5-b671-207a88799961}*SharedItemsImports = 4
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		AppStore|Any CPU = AppStore|Any CPU
 		AppStore|ARM = AppStore|ARM
@@ -35,27 +45,6 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{EB84949D-E3D2-4311-A1D0-6A87A6253491}.AppStore|Any CPU.ActiveCfg = Release|Any CPU
-		{EB84949D-E3D2-4311-A1D0-6A87A6253491}.AppStore|ARM.ActiveCfg = Debug|Any CPU
-		{EB84949D-E3D2-4311-A1D0-6A87A6253491}.AppStore|ARM.Build.0 = Debug|Any CPU
-		{EB84949D-E3D2-4311-A1D0-6A87A6253491}.AppStore|x64.ActiveCfg = Release|Any CPU
-		{EB84949D-E3D2-4311-A1D0-6A87A6253491}.AppStore|x86.ActiveCfg = Release|Any CPU
-		{EB84949D-E3D2-4311-A1D0-6A87A6253491}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EB84949D-E3D2-4311-A1D0-6A87A6253491}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EB84949D-E3D2-4311-A1D0-6A87A6253491}.Debug|ARM.ActiveCfg = Debug|Any CPU
-		{EB84949D-E3D2-4311-A1D0-6A87A6253491}.Debug|ARM.Build.0 = Debug|Any CPU
-		{EB84949D-E3D2-4311-A1D0-6A87A6253491}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{EB84949D-E3D2-4311-A1D0-6A87A6253491}.Debug|x64.Build.0 = Debug|Any CPU
-		{EB84949D-E3D2-4311-A1D0-6A87A6253491}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{EB84949D-E3D2-4311-A1D0-6A87A6253491}.Debug|x86.Build.0 = Debug|Any CPU
-		{EB84949D-E3D2-4311-A1D0-6A87A6253491}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EB84949D-E3D2-4311-A1D0-6A87A6253491}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EB84949D-E3D2-4311-A1D0-6A87A6253491}.Release|ARM.ActiveCfg = Release|Any CPU
-		{EB84949D-E3D2-4311-A1D0-6A87A6253491}.Release|ARM.Build.0 = Release|Any CPU
-		{EB84949D-E3D2-4311-A1D0-6A87A6253491}.Release|x64.ActiveCfg = Release|Any CPU
-		{EB84949D-E3D2-4311-A1D0-6A87A6253491}.Release|x64.Build.0 = Release|Any CPU
-		{EB84949D-E3D2-4311-A1D0-6A87A6253491}.Release|x86.ActiveCfg = Release|Any CPU
-		{EB84949D-E3D2-4311-A1D0-6A87A6253491}.Release|x86.Build.0 = Release|Any CPU
 		{18584843-B839-45F8-B36F-987B847A9ACD}.AppStore|Any CPU.ActiveCfg = Release|Any CPU
 		{18584843-B839-45F8-B36F-987B847A9ACD}.AppStore|Any CPU.Build.0 = Release|Any CPU
 		{18584843-B839-45F8-B36F-987B847A9ACD}.AppStore|ARM.ActiveCfg = Debug|Any CPU
@@ -149,8 +138,35 @@ Global
 		{BD7592C0-AA13-4ADC-90F2-ACB8C97F5214}.Release|x64.Build.0 = Release|x64
 		{BD7592C0-AA13-4ADC-90F2-ACB8C97F5214}.Release|x86.ActiveCfg = Release|x86
 		{BD7592C0-AA13-4ADC-90F2-ACB8C97F5214}.Release|x86.Build.0 = Release|x86
+		{8CF9D714-C9C7-4126-8F01-046364A74937}.AppStore|Any CPU.ActiveCfg = Release|Any CPU
+		{8CF9D714-C9C7-4126-8F01-046364A74937}.AppStore|Any CPU.Build.0 = Release|Any CPU
+		{8CF9D714-C9C7-4126-8F01-046364A74937}.AppStore|ARM.ActiveCfg = Release|Any CPU
+		{8CF9D714-C9C7-4126-8F01-046364A74937}.AppStore|ARM.Build.0 = Release|Any CPU
+		{8CF9D714-C9C7-4126-8F01-046364A74937}.AppStore|x64.ActiveCfg = Release|Any CPU
+		{8CF9D714-C9C7-4126-8F01-046364A74937}.AppStore|x64.Build.0 = Release|Any CPU
+		{8CF9D714-C9C7-4126-8F01-046364A74937}.AppStore|x86.ActiveCfg = Release|Any CPU
+		{8CF9D714-C9C7-4126-8F01-046364A74937}.AppStore|x86.Build.0 = Release|Any CPU
+		{8CF9D714-C9C7-4126-8F01-046364A74937}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CF9D714-C9C7-4126-8F01-046364A74937}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CF9D714-C9C7-4126-8F01-046364A74937}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{8CF9D714-C9C7-4126-8F01-046364A74937}.Debug|ARM.Build.0 = Debug|Any CPU
+		{8CF9D714-C9C7-4126-8F01-046364A74937}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{8CF9D714-C9C7-4126-8F01-046364A74937}.Debug|x64.Build.0 = Debug|Any CPU
+		{8CF9D714-C9C7-4126-8F01-046364A74937}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8CF9D714-C9C7-4126-8F01-046364A74937}.Debug|x86.Build.0 = Debug|Any CPU
+		{8CF9D714-C9C7-4126-8F01-046364A74937}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CF9D714-C9C7-4126-8F01-046364A74937}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CF9D714-C9C7-4126-8F01-046364A74937}.Release|ARM.ActiveCfg = Release|Any CPU
+		{8CF9D714-C9C7-4126-8F01-046364A74937}.Release|ARM.Build.0 = Release|Any CPU
+		{8CF9D714-C9C7-4126-8F01-046364A74937}.Release|x64.ActiveCfg = Release|Any CPU
+		{8CF9D714-C9C7-4126-8F01-046364A74937}.Release|x64.Build.0 = Release|Any CPU
+		{8CF9D714-C9C7-4126-8F01-046364A74937}.Release|x86.ActiveCfg = Release|Any CPU
+		{8CF9D714-C9C7-4126-8F01-046364A74937}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7656F016-BEDF-470E-AA75-F69D023AD2F1}
 	EndGlobalSection
 EndGlobal
