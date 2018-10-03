@@ -188,10 +188,7 @@ namespace MouseBuddy
 			if (isActive)
 			{
 				//create the highlight event
-				Highlights.Add(new HighlightEventArgs()
-				{
-					Position = MousePos
-				});
+				Highlights.Add(new HighlightEventArgs(MousePos, this));
 
 				//check if mouse is clicked
 				if (LMouseClick)
