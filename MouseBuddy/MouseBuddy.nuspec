@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
 	<metadata>
 		<id>MouseBuddy</id>
-		<version>1.0.10</version>
+		<version>2.0.0</version>
 		<title>MouseBuddy</title>
 		<authors>dmanning23</authors>
 		<owners>dmanning23</owners>
@@ -12,43 +12,43 @@
 		<description>A MonoGame component for doing simple mouse interaction</description>
 		<releaseNotes />
 		<copyright>Copyright 2016</copyright>
-		<tags>pcl, windows phone, winphone, android, ios, windows universal, monogame</tags>
+		<tags>android, ios, windows universal, monogame, xamarin</tags>
 		<dependencies>
 
 			<!--Xamarin.Android-->
 			<group targetFramework="MonoAndroid10">
-				<dependency id="MonoGame.Framework.Android" version="3.5"/>
-				<dependency id="FilenameBuddy" version="1.0.1"/>
-				<dependency id="InputHelper" version="1.0.1"/>
-				<dependency id="StateMachineBuddy" version="1.0"/>
-				<dependency id="PrimitiveBuddy" version="1.0"/>
+				<dependency id="MonoGame.Framework.Android" version="3.7"/>
+				<dependency id="FilenameBuddy" version="2.0"/>
+				<dependency id="InputHelper" version="2.0"/>
+				<dependency id="StateMachineBuddy" version="2.0"/>
+				<dependency id="PrimitiveBuddy" version="2.0"/>
 			</group>
 
 			<!--Xamarin.iOS Unified-->
 			<group targetFramework="Xamarin.iOS10">
-				<dependency id="MonoGame.Framework.iOS" version="3.5"/>
-				<dependency id="FilenameBuddy" version="1.0.1"/>
-				<dependency id="InputHelper" version="1.0.1"/>
-				<dependency id="StateMachineBuddy" version="1.0"/>
-				<dependency id="PrimitiveBuddy" version="1.0"/>
+				<dependency id="MonoGame.Framework.iOS" version="3.7"/>
+				<dependency id="FilenameBuddy" version="2.0"/>
+				<dependency id="InputHelper" version="2.0"/>
+				<dependency id="StateMachineBuddy" version="2.0"/>
+				<dependency id="PrimitiveBuddy" version="2.0"/>
 			</group>
 
 			<!--Win Universal-->
 			<group targetFramework="uap10.0">
-				<dependency id="MonoGame.Framework.WindowsUniversal" version="3.5"/>
-				<dependency id="Microsoft.NETCore.UniversalWindowsPlatform" version="5.1"/>
-				<dependency id="FilenameBuddy" version="1.0.1"/>
-				<dependency id="InputHelper" version="1.0.1"/>
-				<dependency id="StateMachineBuddy" version="1.0"/>
-				<dependency id="PrimitiveBuddy" version="1.0"/>
+				<dependency id="MonoGame.Framework.WindowsUniversal" version="3.7"/>
+				<dependency id="Microsoft.NETCore.UniversalWindowsPlatform" version="6.1"/>
+				<dependency id="FilenameBuddy" version="2.0"/>
+				<dependency id="InputHelper" version="2.0"/>
+				<dependency id="StateMachineBuddy" version="2.0"/>
+				<dependency id="PrimitiveBuddy" version="2.0"/>
 			</group>
 
 			<group targetFramework="net451">
-				<dependency id="MonoGame.Framework.WindowsDX" version="3.5"/>
-				<dependency id="FilenameBuddy" version="1.0.1"/>
-				<dependency id="InputHelper" version="1.0.1"/>
-				<dependency id="StateMachineBuddy" version="1.0"/>
-				<dependency id="PrimitiveBuddy" version="1.0"/>
+				<dependency id="MonoGame.Framework.WindowsDX" version="3.7"/>
+				<dependency id="FilenameBuddy" version="2.0"/>
+				<dependency id="InputHelper" version="2.0"/>
+				<dependency id="StateMachineBuddy" version="2.0"/>
+				<dependency id="PrimitiveBuddy" version="2.0"/>
 			</group>
 
 		</dependencies>
