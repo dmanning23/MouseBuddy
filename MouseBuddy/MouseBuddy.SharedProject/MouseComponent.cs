@@ -56,6 +56,22 @@ namespace MouseBuddy
 			}
 		}
 
+		public List<FlickEventArgs> Flicks
+		{
+			get
+			{
+				return MouseManager.Flicks;
+			}
+		}
+
+		public List<PinchEventArgs> Pinches
+		{
+			get
+			{
+				return MouseManager.Pinches;
+			}
+		}
+
 		#endregion //Properties
 
 		#region Initialization
