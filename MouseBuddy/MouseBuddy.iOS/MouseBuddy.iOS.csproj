@@ -37,7 +37,7 @@
       <HintPath>..\packages\FilenameBuddy.2.0.5\lib\Xamarin.iOS10\FilenameBuddy.iOS.dll</HintPath>
     </Reference>
     <Reference Include="InputHelper.iOS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\InputHelper.2.0.3\lib\Xamarin.iOS10\InputHelper.iOS.dll</HintPath>
+      <HintPath>..\packages\InputHelper.2.0.6\lib\Xamarin.iOS10\InputHelper.iOS.dll</HintPath>
     </Reference>
     <Reference Include="MatrixExtensions.iOS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\MatrixExtensions.2.0.0\lib\Xamarin.iOS10\MatrixExtensions.iOS.dll</HintPath>
