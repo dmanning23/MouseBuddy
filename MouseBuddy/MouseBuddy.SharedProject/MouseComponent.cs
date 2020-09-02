@@ -16,61 +16,21 @@ namespace MouseBuddy
 			get; private set;
 		}
 
-		public Vector2 MousePos
-		{
-			get
-			{
-				return MouseManager.MousePos;
-			}
-		}
+		public Vector2 MousePos=> MouseManager.MousePos;
 
-		public List<ClickEventArgs> Clicks
-		{
-			get
-			{
-				return MouseManager.Clicks;
-			}
-		}
+		public List<ClickEventArgs> Clicks => MouseManager.Clicks;
 
-		public List<HighlightEventArgs> Highlights
-		{
-			get
-			{
-				return MouseManager.Highlights;
-			}
-		}
+		public List<HighlightEventArgs> Highlights => MouseManager.Highlights;
 
-		public List<DragEventArgs> Drags
-		{
-			get
-			{
-				return MouseManager.Drags;
-			}
-		}
+		public List<DragEventArgs> Drags => MouseManager.Drags;
 
-		public List<DropEventArgs> Drops
-		{
-			get
-			{
-				return MouseManager.Drops;
-			}
-		}
+		public List<DropEventArgs> Drops => MouseManager.Drops;
 
-		public List<FlickEventArgs> Flicks
-		{
-			get
-			{
-				return MouseManager.Flicks;
-			}
-		}
+		public List<FlickEventArgs> Flicks => MouseManager.Flicks;
 
-		public List<PinchEventArgs> Pinches
-		{
-			get
-			{
-				return MouseManager.Pinches;
-			}
-		}
+		public List<PinchEventArgs> Pinches => MouseManager.Pinches;
+
+		public List<HoldEventArgs> Holds => MouseManager.Holds;
 
 		#endregion //Properties
 

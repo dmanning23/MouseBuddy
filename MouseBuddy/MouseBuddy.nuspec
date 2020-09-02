@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
 	<metadata>
 		<id>MouseBuddy</id>
-		<version>2.0.2</version>
+		<version>2.0.4</version>
 		<title>MouseBuddy</title>
 		<authors>dmanning23</authors>
 		<owners>dmanning23</owners>
@@ -33,16 +33,6 @@
 				<dependency id="PrimitiveBuddy" version="2.0"/>
 			</group>
 
-			<!--Win Universal-->
-			<group targetFramework="uap10.0">
-				<dependency id="MonoGame.Framework.WindowsUniversal" version="3.7"/>
-				<dependency id="Microsoft.NETCore.UniversalWindowsPlatform" version="6.1"/>
-				<dependency id="FilenameBuddy" version="2.0"/>
-				<dependency id="InputHelper" version="2.0"/>
-				<dependency id="StateMachineBuddy" version="2.0"/>
-				<dependency id="PrimitiveBuddy" version="2.0"/>
-			</group>
-
 			<group targetFramework="net451">
 				<dependency id="MonoGame.Framework.WindowsDX" version="3.7"/>
 				<dependency id="FilenameBuddy" version="2.0"/>
@@ -62,10 +52,6 @@
 		<!--Xamarin.iOS Unified-->
 		<file src="MouseBuddy.iOS\bin\Release\MouseBuddy.iOS.pdb" target="lib\Xamarin.iOS10\MouseBuddy.iOS.pdb" />
 		<file src="MouseBuddy.iOS\bin\Release\MouseBuddy.iOS.dll" target="lib\Xamarin.iOS10\MouseBuddy.iOS.dll" />
-
-		<!--Windows Universal-->
-		<file src="MouseBuddy.WindowsUniversal\bin\Release\MouseBuddy.WindowsUniversal.pdb" target="lib\uap10.0\MouseBuddy.WindowsUniversal.pdb" />
-		<file src="MouseBuddy.WindowsUniversal\bin\Release\MouseBuddy.WindowsUniversal.dll" target="lib\uap10.0\MouseBuddy.WindowsUniversal.dll" />
 
 		<!--WindowsDX-->
 		<file src="MouseBuddy.WindowsDX\bin\Release\MouseBuddy.WindowsDX.pdb" target="lib\net451\MouseBuddy.WindowsDX.pdb" />
