@@ -5,9 +5,11 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MouseBuddy", "MouseBuddy\MouseBuddy.csproj", "{C375F90F-C724-407E-8049-4D6D0D7BCDC6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MouseBuddyExample", "MouseBuddyExample\MouseBuddyExample.csproj", "{A40BA577-185E-4864-977D-D3B76ACE9E2C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MouseBuddy.Example", "MouseBuddy.Example\MouseBuddy.Example.csproj", "{A40BA577-185E-4864-977D-D3B76ACE9E2C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MousePointTransformExample", "MousePointTransformExample\MousePointTransformExample.csproj", "{01FB1D7D-FC2E-41EB-BBFA-F53A4D90BE2F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MouseBuddy.Tests", "MouseBuddy.Tests\MouseBuddy.Tests.csproj", "{CF9F4ABE-04C3-4E08-9191-69BB48808116}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,6 +57,18 @@ Global
 		{01FB1D7D-FC2E-41EB-BBFA-F53A4D90BE2F}.Release|x64.Build.0 = Release|Any CPU
 		{01FB1D7D-FC2E-41EB-BBFA-F53A4D90BE2F}.Release|x86.ActiveCfg = Release|Any CPU
 		{01FB1D7D-FC2E-41EB-BBFA-F53A4D90BE2F}.Release|x86.Build.0 = Release|Any CPU
+		{CF9F4ABE-04C3-4E08-9191-69BB48808116}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF9F4ABE-04C3-4E08-9191-69BB48808116}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF9F4ABE-04C3-4E08-9191-69BB48808116}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{CF9F4ABE-04C3-4E08-9191-69BB48808116}.Debug|x64.Build.0 = Debug|Any CPU
+		{CF9F4ABE-04C3-4E08-9191-69BB48808116}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{CF9F4ABE-04C3-4E08-9191-69BB48808116}.Debug|x86.Build.0 = Debug|Any CPU
+		{CF9F4ABE-04C3-4E08-9191-69BB48808116}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF9F4ABE-04C3-4E08-9191-69BB48808116}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF9F4ABE-04C3-4E08-9191-69BB48808116}.Release|x64.ActiveCfg = Release|Any CPU
+		{CF9F4ABE-04C3-4E08-9191-69BB48808116}.Release|x64.Build.0 = Release|Any CPU
+		{CF9F4ABE-04C3-4E08-9191-69BB48808116}.Release|x86.ActiveCfg = Release|Any CPU
+		{CF9F4ABE-04C3-4E08-9191-69BB48808116}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

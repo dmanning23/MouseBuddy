@@ -2,7 +2,7 @@
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <PackageId>MouseBuddy</PackageId>
-    <Version>5.0.0</Version>
+    <Version>5.0.1</Version>
     <Title>MouseBuddy</Title>
     <Authors>dmanning23</Authors>
     <description>A MonoGame component for doing simple mouse interaction</description>

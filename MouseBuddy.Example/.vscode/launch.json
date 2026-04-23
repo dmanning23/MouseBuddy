@@ -5,10 +5,10 @@
     "version": "0.2.0",
     "configurations": [
       {
-        "name": "C#: MouseBuddyExample Debug",
+        "name": "C#: MouseBuddy.Example Debug",
         "type": "dotnet",
         "request": "launch",
-        "projectPath": "${workspaceFolder}/MouseBuddyExample.csproj"
+        "projectPath": "${workspaceFolder}/MouseBuddy.Example.csproj"
       }
     ],
   }
