@@ -6,7 +6,7 @@ using MouseBuddy;
 using PrimitiveBuddy;
 using ResolutionBuddy;
 
-namespace MousePointTransformExample
+namespace MouseBuddy.PointTransformExample
 {
     /// <summary>
     /// This is the main type for your game.

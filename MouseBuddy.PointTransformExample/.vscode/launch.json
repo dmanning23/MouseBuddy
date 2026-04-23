@@ -5,10 +5,10 @@
     "version": "0.2.0",
     "configurations": [
       {
-        "name": "C#: MousePointTransformExample Debug",
+        "name": "C#: MouseBuddy.PointTransformExample Debug",
         "type": "dotnet",
         "request": "launch",
-        "projectPath": "${workspaceFolder}/MousePointTransformExample.csproj"
+        "projectPath": "${workspaceFolder}/MouseBuddy.PointTransformExample.csproj"
       }
     ],
   }
