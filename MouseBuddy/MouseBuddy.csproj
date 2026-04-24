@@ -2,7 +2,7 @@
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <PackageId>MouseBuddy</PackageId>
-    <Version>5.0.2</Version>
+    <Version>5.1.0</Version>
     <Title>MouseBuddy</Title>
     <Authors>dmanning23</Authors>
     <description>A MonoGame component for doing simple mouse interaction</description>
@@ -21,7 +21,7 @@
     </PackageReference>
     <PackageReference Include="FilenameBuddy" Version="5.*" />
     <PackageReference Include="InputHelper" Version="5.*" />
-    <PackageReference Include="StateMachineBuddy" Version="5.*" />
+    <PackageReference Include="StateMachineBuddy" Version="5.1.*" />
     <PackageReference Include="PrimitiveBuddy" Version="5.*" />
   </ItemGroup>
 </Project>
